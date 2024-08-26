@@ -1,6 +1,4 @@
 import 'dart:math';
-import 'dart:ui';
-
 import 'package:breaking_blocks/components/ball.dart';
 import 'package:flame/collisions.dart';
 import 'package:flame/components.dart';

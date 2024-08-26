@@ -52,9 +52,6 @@ class BallComponent extends CircleComponent with CollisionCallbacks {
     if (other is ScreenHitbox) {
       final screenHitBoxRect = other.toAbsoluteRect();
       for (final point in intersectionPoints) {
-        print(
-            'aaaaa -> ${point.y} >= ${screenHitBoxRect.bottom}  ${point.y >= screenHitBoxRect.bottom}');
-        print('bbbb -> ${point.x}');
         if (point.x == screenHitBoxRect.left && !isCollidedScreenHitBoxX) {
           velocity.x = -velocity.x;
           isCollidedScreenHitBoxX = true;
